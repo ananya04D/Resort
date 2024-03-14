@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Nainital Breeze Resorts</title>
+</head>
+<body>
+  <div class="main-container">
+    <h1>NAINITAL BREEZE RESORT</h1>
+
+   
+    <!-- Include the navigation bar -->
+    <div id="navbar-container"></div>
+
+    <div class="slideshow">
+      <button class="slideshow-button" onclick="prevImage()">&#10094;</button>
+      <img src="D:\PROJECT\RESORT\PICTURES\Resort2.png" alt="Resort Image 1">
+      <img src="D:\PROJECT\RESORT\PICTURES\Resort1.png" alt="Resort Image 2">
+      <img src="D:\PROJECT\RESORT\PICTURES\Garden.png" alt="Resort Image 3">
+      <button class="slideshow-button" onclick="nextImage()">&#10095;</button>
+    </div>
+    
+    <div class="overview">
+      <button class="overview-btn" onclick="window.location.href='index.html'">Overview</button>
+      <button class="guest-rooms-btn" onclick="window.location.href='guest-rooms.html'">Guest Rooms</button>
+      <button class="dining-btn" onclick="window.location.href='dining.html'">Dining</button>
+      <!-- Add buttons for other sections like Fitness, Spa, Local, Events, Gallery -->
+      <button class="book-now-btn" onclick="window.location.href='book-now.html'">Book Now</button>
+    </div>
+
+    <div class="welcome-text">
+      <!-- Welcome text goes here -->
+      <p>Welcome to Nainital Breeze – A Tranquil Haven in the Heart of Nainital's Hills...
+        Escape to the enchanting hills of Nainital and discover a sanctuary of serenity at Nainital Breeze. Nestled amidst lush greenery and surrounded by panoramic views of the Himalayas, our resort is a perfect blend of luxury, comfort, and nature's beauty.
+Wake up to the melodious chirping of birds and the gentle rustle of leaves as you step onto your private balcony overlooking the mist-covered hills. Our resort is strategically situated to provide breathtaking vistas at every turn, ensuring a rejuvenating experience for nature enthusiasts and peace seekers alike. At Nainital Breeze, we are committed to preserving the natural beauty that surrounds us. Our eco-friendly practices, from energy-efficient facilities to waste reduction initiatives, reflect our dedication to sustainable tourism.
+Embark on a journey of relaxation, adventure, and unparalleled luxury. Book your stay at Nainital Breeze and let the hills of Nainital weave their magic on your soul.
+Come, experience a stay beyond compare – where luxury meets nature, and every moment is a cherished memory.
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <h2>Nainital Breeze Resorts</h2>
+      <p>
+        <span class="location-icon">📍</span> 21-A, Adam’s Road, Nainital, Uttarakhand<br>
+        <span class="mail-icon">✉️</span> nainitalbreeze@xyz.com<br>
+        <span class="phone-icon">📞</span> 1234567890, 9087654321
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js" defer>
+    // Fetch and inject the navigation bar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
+
+

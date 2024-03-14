@@ -1,0 +1,44 @@
+<!-- garden-facing-room-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Nainital Breeze Resorts - Garden Facing Room Details</title>
+</head>
+<body>
+  <div class="main-container">
+    <h1>NAINITAL BREEZE RESORT</h1>
+    
+    <!-- Include the navigation bar -->
+    <div id="navbar-container"></div>
+    
+    <div class="room-details">
+      <img src="D:\PROJECT\RESORT\PICTURES\GardenFacing.png" alt="Garden Facing Room">
+      <h2>Garden Facing Room Details</h2>
+      <p>Furnished with contemporary decor, Garden Facing Rooms offer a luxurious and relaxing stay. Book now and enjoy a happening holiday.</p>
+      <!-- Add more details as needed -->
+    </div>
+
+    <div class="contact-info">
+      <h2>Nainital Breeze Resorts</h2>
+      <p>
+        <span class="location-icon">📍</span> 21-A, Adam’s Road, Nainital, Uttarakhand<br>
+        <span class="mail-icon">✉️</span> nainitalbreeze@xyz.com<br>
+        <span class="phone-icon">📞</span> 1234567890, 9087654321
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script>
+    // Fetch and inject the navigation bar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

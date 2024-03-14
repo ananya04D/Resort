@@ -1,0 +1,44 @@
+<!-- superior-room-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Nainital Breeze Resorts - Superior Room Details</title>
+</head>
+<body>
+  <div class="main-container">
+    <h1>NAINITAL BREEZE RESORT</h1>
+    
+    <!-- Include the navigation bar -->
+    <div id="navbar-container"></div>
+    
+    <div class="room-details">
+      <img src="D:\PROJECT\RESORT\PICTURES\Supreme.png" alt="Superior Room">
+      <h2>Superior Room Details</h2>
+      <p>The Superior Rooms at The Nainital Breeze, Nainital are ideally designed to offer you a comfortable and memorable stay in the beautiful city. Book your stay now and avail complimentary benefits along with modern furnishing that lets you relax and enjoy a happening holiday.</p>
+      <!-- Add more details as needed -->
+    </div>
+
+    <div class="contact-info">
+      <h2>Nainital Breeze Resorts</h2>
+      <p>
+        <span class="location-icon">📍</span> 21-A, Adam’s Road, Nainital, Uttarakhand<br>
+        <span class="mail-icon">✉️</span> nainitalbreeze@xyz.com<br>
+        <span class="phone-icon">📞</span> 1234567890, 9087654321
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script>
+    // Fetch and inject the navigation bar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
